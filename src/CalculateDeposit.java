@@ -11,8 +11,8 @@ public class CalculateDeposit {
     }
 
     double makeRound(double value, int places) {
-        double ScaLe = Math.pow(10, places);
-        return Math.round(value*ScaLe)/ScaLe;
+        double scaLe = Math.pow(10, places);
+        return Math.round(value * scaLe) / scaLe;
     }
 
     void printMenu() {
@@ -39,9 +39,7 @@ public class CalculateDeposit {
         System.out.println("Результат вклада: " + depositAmount + " за " + termOfDeposit + " лет превратятся в "
                 + outResult);
     }
-    public static void main(String[] args){
-        new CalculateDeposit().printMenu();
-}
+    public static void main(String[] args){ new CalculateDeposit().printMenu(); }
 
 
 
